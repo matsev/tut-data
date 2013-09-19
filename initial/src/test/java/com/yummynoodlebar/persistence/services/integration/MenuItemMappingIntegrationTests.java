@@ -1,6 +1,7 @@
 package com.yummynoodlebar.persistence.services.integration;
 
 import com.mongodb.Mongo;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -10,8 +11,8 @@ import org.springframework.data.mongodb.core.SimpleMongoDbFactory;
 
 import static com.yummynoodlebar.persistence.domain.fixture.MongoAssertions.usingMongo;
 import static com.yummynoodlebar.persistence.domain.fixture.PersistenceFixture.standardItem;
-import static junit.framework.Assert.assertTrue;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class MenuItemMappingIntegrationTests {
 

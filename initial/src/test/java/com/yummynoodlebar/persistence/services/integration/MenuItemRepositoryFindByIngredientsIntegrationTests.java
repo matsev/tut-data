@@ -1,4 +1,4 @@
-package com.yummynoodlebar.persistence.integration;
+package com.yummynoodlebar.persistence.services.integration;
 
 
 import com.yummynoodlebar.config.MongoConfiguration;
