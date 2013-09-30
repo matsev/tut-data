@@ -37,7 +37,7 @@ To work through this tutorial you'll need a few things:
 
 * About a half hour for each section. You might finish it in a week during your lunch break (or during the weekend!)
 * A copy of the code (available either by [git][u-git] or a [downloadable zip file](https://github.com/spring-guides/tut-data/archive/master.zip)).
-* An IDE of your choice. Spring recommends [Spring Tool Suite](http://www.springsource.org/sts), which is a [free download](http://www.springsource.org/sts).
+* An IDE of your choice. Spring recommends [Spring Tool Suite](http://spring.io/tools/sts/all), which is a free download.
 * An installation of [MongoDB](http://www.mongodb.org/)
 
 ### Downloading and running the code
