@@ -22,7 +22,7 @@ Add the following to your list of repositories in your build.gradle:
 
 `build.gradle`
 ```gradle
-  maven { url 'http://repo.springsource.org/libs-release'}
+  maven { url 'http://repo.spring.io/libs-release'}
 ```
 
 The following to your list of dependencies:

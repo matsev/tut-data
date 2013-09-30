@@ -4,7 +4,7 @@ apply plugin: 'idea'
 
 repositories {
   mavenCentral()
-  maven { url 'http://repo.springsource.org/libs-release'}
+  maven { url 'http://repo.spring.io/libs-release'}
 }
 
 dependencies {
