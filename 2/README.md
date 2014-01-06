@@ -328,7 +328,7 @@ import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
 
-public interface MenuItemRepository extends CrudRepository<MenuItem, String>, AnalyseIngredients {
+public interface MenuItemRepository extends CrudRepository<MenuItem, String> {
 
   public List<MenuItem> findByIngredientsNameIn(String... name);
 
@@ -508,6 +508,23 @@ public interface AnalyseIngredients {
 ```
 
 Next, update `MenuItemRepository` to include the `AnalyseIngredients` interface. This indicates to Spring Data that it should look for an implementation of that interface for extension.
+
+`src/main/java/com/yummynoodlebar/persistence/repository/MenuItemRepository.java`
+```java
+package com.yummynoodlebar.persistence.repository;
+
+
+import com.yummynoodlebar.persistence.domain.MenuItem;
+import org.springframework.data.repository.CrudRepository;
+
+import java.util.List;
+
+public interface MenuItemRepository extends CrudRepository<MenuItem, String>, AnalyseIngredients {
+
+  public List<MenuItem> findByIngredientsNameIn(String... name);
+
+}
+```
 
 Next, create a test class that looks for this new functionality called `MenuItemRepositoryAnalyseIngredientsIntegrationTests`:
 
