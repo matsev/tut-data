@@ -217,6 +217,18 @@ Open `com.yummynoodlebar.persistence.domain.MenuItem`, and add the annotations @
 
 `src/main/java/com/yummynoodlebar/persistence/domain/MenuItem.java`
 ```java
+package com.yummynoodlebar.persistence.domain;
+
+
+import com.yummynoodlebar.events.menu.MenuItemDetails;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.index.Indexed;
+import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.Field;
+
+import java.math.BigDecimal;
+import java.util.Set;
+
 @Document(collection = "menu")
 public class MenuItem {
 
