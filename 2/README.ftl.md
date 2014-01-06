@@ -216,6 +216,8 @@ Open the interface `com.yummynoodlebar.persistence.repository.AnalyseIngredients
 
 Next, update `MenuItemRepository` to include the `AnalyseIngredients` interface. This indicates to Spring Data that it should look for an implementation of that interface for extension.
 
+    <@snippet  path="src/test/java/com/yummynoodlebar/persistence/integration/MenuItemRepositoryIntegrationTests.java" "analyseIngredients" prefix="/complete"/>
+
 Next, create a test class that looks for this new functionality called `MenuItemRepositoryAnalyseIngredientsIntegrationTests`:
 
     <@snippet path="src/test/java/com/yummynoodlebar/persistence/integration/MenuItemRepositoryAnalyseIngredientsIntegrationTests.java" prefix="/complete"/>

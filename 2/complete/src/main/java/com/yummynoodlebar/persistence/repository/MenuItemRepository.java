@@ -5,7 +5,10 @@ import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
 
-public interface MenuItemRepository extends CrudRepository<MenuItem, String>, AnalyseIngredients {
+public interface MenuItemRepository extends CrudRepository<MenuItem, String>
+// {!begin analyseIngredients}
+  , AnalyseIngredients {
+// {!end analyseIngredients}
 
   public List<MenuItem> findByIngredientsNameIn(String... name);
 
