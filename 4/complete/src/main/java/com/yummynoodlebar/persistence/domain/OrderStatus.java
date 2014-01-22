@@ -26,10 +26,6 @@ public class OrderStatus implements Serializable {
     this.statusDate = date;
   }
 
-  public OrderStatus() {
-
-  }
-
   public Date getStatusDate() {
     return statusDate;
   }
@@ -44,22 +40,6 @@ public class OrderStatus implements Serializable {
 
   public UUID getId() {
     return id;
-  }
-
-  public void setOrderId(UUID orderId) {
-    this.orderId = orderId;
-  }
-
-  public void setId(UUID id) {
-    this.id = id;
-  }
-
-  public void setStatusDate(Date statusDate) {
-    this.statusDate = statusDate;
-  }
-
-  public void setStatus(String status) {
-    this.status = status;
   }
 
   public OrderStatusDetails toStatusDetails() {

@@ -11,7 +11,7 @@ public interface OrderStatusRepository {
 
   void delete(UUID key);
 
-  OrderStatus findLatestById(UUID key);
+  OrderStatus findOne(UUID key);
 
   List<OrderStatus> findAll();
 }

@@ -40,16 +40,16 @@ public class OrderStatusRepositoryIntegrationTests {
   @Test
   public void thatItemIsInsertedIntoRepoWorks() throws Exception {
 
-    UUID key = UUID.randomUUID();
+    UUID orderId = UUID.randomUUID();
 
-    OrderStatus orderStatus = PersistenceFixture.startedCooking(key);
-    orderStatus.setId(key);
+    OrderStatus orderStatus = PersistenceFixture.startedCooking(orderId);
+    UUID orderStatusId = orderStatus.getId();
 
     ordersStatusRepository.save(orderStatus);
 
-    OrderStatus retrievedOrderStatus = ordersStatusRepository.findOne(key);
+    OrderStatus retrievedOrderStatus = ordersStatusRepository.findOne(orderStatusId);
 
     assertNotNull(retrievedOrderStatus);
-    assertEquals(key, retrievedOrderStatus.getId());
+    assertEquals(orderStatusId, retrievedOrderStatus.getId());
   }
 }
